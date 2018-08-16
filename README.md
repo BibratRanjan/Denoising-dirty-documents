@@ -10,3 +10,7 @@ This is for a challenge in kaggle, follow it [here](https://www.kaggle.com/c/den
 * Keras 2.2 with Tensorflow backend
 
 ## Sample
+### Original
+![](https://github.com/BibratRanjan/Denoising-dirty-documents/blob/master/Sample/124.png)
+### Denoised
+![](https://github.com/BibratRanjan/Denoising-dirty-documents/blob/master/Sample/124_denoised.png)
