@@ -55,6 +55,7 @@ encoded = MaxPooling2D((2, 2), padding='same', name='encoder')(x)
 x = Conv2D(32, (3, 3), activation='relu', padding='same')(encoded)
 x = UpSampling2D((2, 2))(x)
 decoded = Conv2D(3, (3, 3), activation='sigmoid', padding='same')(x)
+#OCR images are binary images(the clean, ground truth ones). Hence we use sigmoid activation to compute pixelwise binary_crossentropy
 
 autoencoder = Model(input_img, decoded)
 early_stopper = EarlyStopping(patience=5)
